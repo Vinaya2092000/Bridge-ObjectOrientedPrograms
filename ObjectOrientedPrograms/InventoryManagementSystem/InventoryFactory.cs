@@ -91,7 +91,7 @@ namespace ObjectOrientedPrograms.InventoryManagementSystem
         public void EditInventory(string inventoryName, string inventoryDetailName)
         {
             Console.WriteLine("Enter RiceList/ WheatList/ PulsesList as input to Edit:");
-            string InventoryDetail = Console.ReadLine();
+            string InventoryName = Console.ReadLine();
 
             if (inventoryName == "RiceList")
             {
