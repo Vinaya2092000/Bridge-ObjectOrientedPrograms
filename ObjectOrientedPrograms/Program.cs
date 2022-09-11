@@ -1,18 +1,19 @@
 ﻿using ObjectOrientedPrograms.InventoryManagement;
 using ObjectOrientedPrograms.InventoryManagementSystem;
+using ObjectOrientedPrograms.StockManagement;
 namespace ObjectOrientedPrograms
 {
     internal class Program
     {
         const string INVENTORY_DATA_FILE_PATH = @"C:\Users\vinay\Documents\B-Practice\Bridge-OOPS\ObjectOrientedPrograms\InventoryManagement\Inventory.json";
         const string INVENTORYDETAILS_DATA_FILE_PATH = @"C:\Users\vinay\Documents\B-Practice\Bridge-OOPS\ObjectOrientedPrograms\InventoryManagementSystem\InventoryDetails.json";
-
+        const string STOCK_DATA_FILE_PATH = @"C:\Users\vinay\Documents\B-Practice\Bridge-OOPS\ObjectOrientedPrograms\StockManagement\Stockm.json";
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, Welcome to Object Oriented Problems");
             while (true)
             {
-                Console.WriteLine("Select the programs\n 1.InventoryManagement\n 2.InventoryManagementSystem");
+                Console.WriteLine("Select the programs\n 1.InventoryManagement\n 2.InventoryManagementSystem\n 3.StockManagement");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -35,6 +36,10 @@ namespace ObjectOrientedPrograms
                         inventoryFactory.WriteToJson(INVENTORYDETAILS_DATA_FILE_PATH);
                         inventoryFactory.EditInventory("RiceList", "Boiled");
                         inventoryFactory.WriteToJson(INVENTORYDETAILS_DATA_FILE_PATH);
+                        break;
+                    case 3:
+                        StockManage stockManage = new StockManage();
+                        stockManage.ReadJsonFileStock(STOCK_DATA_FILE_PATH);
                         break;
                 }
             }
