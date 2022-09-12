@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ObjectOrientedPrograms.InventoryManagement;
 using ObjectOrientedPrograms.StockManagement;
 using ObjectOrientedPrograms.InventoryManagementSystem;
 using Newtonsoft.Json;
 namespace ObjectOrientedPrograms.StockManagement
 {
-    public class Stockm
+    public class Stock
     {
-        public List<Stockm> Name { get; set; }
-        public List<Stockm> NoOfShares { get; set; }
-        public List<Stockm> PricePerShare { get; set; }
+        public string? Name { get; set; }
+        public int NoOfShares { get; set; }
+        public int PricePerShare { get; set; }
 
         
     }
