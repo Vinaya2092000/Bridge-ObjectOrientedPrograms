@@ -12,15 +12,15 @@ namespace ObjectOrientedPrograms.StockManagement
 {
     public class StockManage
     {
-        List<Stockm> stockList = new List<Stockm>();
+        List<Stock> details = new List<Stock>();
         public void ReadJsonFileStock(string fileName)
         {
             using (StreamReader reader = new StreamReader(fileName))
             {
                 var json = reader.ReadToEnd();
-                this.stockList = JsonConvert.DeserializeObject<List<Stockm>>(json);
+                this.details = JsonConvert.DeserializeObject<List<Stock>>(json);
                 Console.WriteLine("Name" + "\t" + "No of Shares" + "\t" + "Price Per Share");
-                foreach (var data in stockList)
+                foreach (var data in details)
                 {
                     Console.WriteLine(data.Name + "\t" + data.NoOfShares + "\t" + data.PricePerShare);
                 }

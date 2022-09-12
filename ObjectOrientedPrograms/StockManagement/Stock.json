@@ -1,37 +1,37 @@
 
   [
     {
-      "Symbol": "FaceBook",
+      "Name": "FaceBook",
       "NoOfShares": 50,
       "PricePerShare": 20
     },
     {
-      "Symbol": "Amazon",
+      "Name": "Amazon",
       "NoOfShares": 50,
       "PricePerShare": 40
     },
     {
-      "Symbol": "FlipKart",
+      "Name": "FlipKart",
       "NoOfShares": 50,
       "PricePerShare": 30
     },
     {
-      "Symbol": null,
+      "Name": null,
       "NoOfShares": 0,
       "PricePerShare": 0
     },
     {
-      "Symbol": null,
+      "Name": null,
       "NoOfShares": 0,
       "PricePerShare": 0
     },
     {
-      "Symbol": null,
+      "Name": null,
       "NoOfShares": 0,
       "PricePerShare": 0
     },
     {
-      "Symbol": null,
+      "Name": null,
       "NoOfShares": 0,
       "PricePerShare":0
     }
